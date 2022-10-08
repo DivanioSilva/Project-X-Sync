@@ -1,7 +1,5 @@
 package com.project.x.sync.projectxsync.domain;
 
-import lombok.Data;
-
 import java.io.Serializable;
 
 /**

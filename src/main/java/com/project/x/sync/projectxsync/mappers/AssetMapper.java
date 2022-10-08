@@ -6,11 +6,15 @@ import com.project.x.sync.projectxsync.domain.AssetWithIdDto;
 import org.mapstruct.*;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE, componentModel = "spring")
 public interface AssetMapper {
 
     Asset assetDtoToAsset(AssetDto assetDto);
+
+    List<Asset> assetDTOsToAssets(List<AssetDto> assetDTOS);
 
     AssetDto assetToAssetDto(Asset asset);
 
